@@ -16,7 +16,7 @@ public class ConsumerService {
         writeToFile(message);
     }
     public void writeToFile(byte[] pic){
-        String folderPath = "C:\\Users\\ASUS\\Documents\\notification-ms\\kafkademo\\src\\main\\resources\\images";
+        String folderPath = "C:\\Users\\TamerlanAg\\Desktop\\kafkatest\\kafkatest\\src\\main\\resources\\images";
         String fileName = "image.jpg";
 
         File file = new File(folderPath, fileName);

@@ -31,7 +31,7 @@ public class KafkaProducerConfig {
         configProps.put(
                 ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,
                 ByteArraySerializer.class);
-        configProps.put(ProducerConfig.MAX_REQUEST_SIZE_CONFIG, 20);
+        configProps.put(ProducerConfig.MAX_REQUEST_SIZE_CONFIG, 20971520);
 
 
         return new DefaultKafkaProducerFactory<>(configProps);
