@@ -7,7 +7,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 import org.springframework.kafka.core.KafkaAdmin;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -31,6 +30,7 @@ public class KafkaTopicConfiguration {
         Map<String, Object> configs = new HashMap<>();
 
         configs.put(AdminClientConfig.BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+
         return new KafkaAdmin(configs);
     }
 
